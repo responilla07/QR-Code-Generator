@@ -1,0 +1,6 @@
+{
+    "method": "POST",
+    "url": "http://chart.apis.google.com/chart",
+    "json": true, 
+    "encoding": null
+}
