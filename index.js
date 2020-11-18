@@ -6,6 +6,7 @@ var options = require("./config/googleChartOptions.json");
 
 var app = express();
 app.use(express.json());
+PORT = process.env.PORT || 5000;
 
 app.get('/generate', function (request, response) {
     let data = new QRDetails(request.query);
@@ -27,6 +28,6 @@ app.get('/generate', function (request, response) {
 });
 
 // http://localhost:5000/generate?height=500&width=500&data=POWER!
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:5000`)
 })
